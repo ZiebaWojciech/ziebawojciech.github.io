@@ -1,0 +1,12 @@
+- name: About us
+  link: /about/
+- name: Meetups
+  link: /meetups/
+- name: Blog
+  link: /blog/
+- name: Partners
+  link: /partners/
+- name: Collaboration
+  link: /collaboration/
+- name: Contact
+  link: /contact/
