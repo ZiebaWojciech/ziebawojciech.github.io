@@ -1,0 +1,31 @@
+---
+layout: default
+show_sidebar: false
+---
+
+<div class="columns is-multiline">
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+  {% assign sorted_leaders = site.leaders | sort:page.sort %}
+
+  {% for leader in sorted_leaders %}
+  <article class="media">
+  <figure class="media-left">
+    <p class="image is-128x128">
+      <img src="{{ leader.image }}">
+    </p>
+  </figure>
+  <div class="media-content">
+    <div class="content">
+      <p>
+        <strong>{{ leader.name }}</strong> <small>  {{ leader.email }} </small>
+        <br>
+        {{ leader.description }}
+      </p>
+    </div>
+    </article>
+{% endfor %}
+</div>
