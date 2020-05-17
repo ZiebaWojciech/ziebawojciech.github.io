@@ -12,20 +12,28 @@ show_sidebar: false
   {% assign sorted_leaders = site.leaders | sort:page.sort %}
 
   {% for leader in sorted_leaders %}
-  <article class="media">
-  <figure class="media-left">
-    <p class="image is-128x128">
-      <img src="{{ leader.image }}">
-    </p>
-  </figure>
-  <div class="media-content">
-    <div class="content">
-      <p>
-        <strong>{{ leader.name }}</strong> <small>  {{ leader.email }} </small>
-        <br>
-        {{ leader.description }}
-      </p>
-    </div>
-    </article>
+  <div class="column is-one-quarter-desktop is-6-tablet">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title"> {{ leader.name }} </p>
+        </header>
+      <a href="{{ leader.url | prepend: site.baseurl }}">
+          {% if leader.image %}
+          <div class="card-image">
+            <figure class="image is-1sby1">
+              <img src="{{ leader.image }}" alt="{{ leader.name }}" />
+            </figure>
+          </div>
+          {% endif %}
+
+
+        </a>
+        <div class="card-content">
+          <!-- <p class="title is-3">{{ leader.name }}</p> -->
+          <p class="content has-text-right">{{ leader.email }}</p>
+          <!-- <p class="subtitle has-text-right"> {{ leader.email }} </p> -->
+        </div>
+        </div>
+  </div>
 {% endfor %}
 </div>

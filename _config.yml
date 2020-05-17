@@ -31,6 +31,13 @@ remote_theme: chrisrhymes/bulma-clean-theme
 plugins:
   - jekyll-feed
 
+collections:
+  leaders: 
+    output: true
+    layout: leader
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
