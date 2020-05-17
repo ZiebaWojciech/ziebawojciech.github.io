@@ -1,4 +1,4 @@
----
+---_layouts/leader.html
 layout: default
 show_sidebar: false
 ---
@@ -25,15 +25,11 @@ show_sidebar: false
             </figure>
           </div>
           {% endif %}
-
-
-        </a>
-        <div class="card-content">
-          <!-- <p class="title is-3">{{ leader.name }}</p> -->
-          <p class="content has-text-right">{{ leader.email }}</p>
-          <!-- <p class="subtitle has-text-right"> {{ leader.email }} </p> -->
-        </div>
-        </div>
+      </a>
+      <div class="card-content">
+        <p class="content has-text-right">{{ leader.email }}</p>
+      </div>
+    </div>
   </div>
 {% endfor %}
 </div>
