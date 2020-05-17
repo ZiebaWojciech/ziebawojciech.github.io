@@ -4,6 +4,7 @@ layout: page
 show_sidebar: true
 hero_image: /img/hero.png
 hero_darken: true
+hero_height: is-medium
 video: video_pilimon
 ---
 
