@@ -1,5 +1,11 @@
 ---
 ---
 $primary: #e73e33;
+#footer-triangles {
+  height:75px;
+  background:
+    linear-gradient(to bottom right,transparent 49.5%,#e73e33 50%),
+    linear-gradient(to bottom left,transparent 49.5%,#393838  50%);
+}
 // Import Main CSS file from theme
 @import "main";
