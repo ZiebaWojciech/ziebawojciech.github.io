@@ -1,0 +1,35 @@
+---
+layout: default
+show_sidebar: false
+---
+
+<div class="columns is-multiline">
+
+  <div class="content">
+    {{ content }}
+  </div>
+
+  {% assign sorted_leaders = site.leaders | sort:page.sort %}
+
+  {% for leader in sorted_leaders %}
+  <div class="column is-one-quarter-desktop is-6-tablet">
+      <div class="card">
+        <header class="card-header">
+          <p class="card-header-title"> {{ leader.name }} </p>
+        </header>
+      <a href="{{ leader.url | prepend: site.baseurl }}">
+          {% if leader.image %}
+          <div class="card-image">
+            <figure class="image is-1sby1">
+              <img src="{{ leader.image }}" alt="{{ leader.name }}" />
+            </figure>
+          </div>
+          {% endif %}
+      </a>
+      <div class="card-content">
+        <p class="content has-text-right">{{ leader.email }}</p>
+      </div>
+    </div>
+  </div>
+{% endfor %}
+</div>

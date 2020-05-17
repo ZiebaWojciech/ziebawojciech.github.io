@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+<div class="columns is-multiline">
+
+    <div class="column is-4">
+        <figure class="image is-1by1">
+            <img src="{{ page.image }}" />
+        </figure>
+    </div>
+
+    <div class="column is-6">
+        <p class="title is-3">{{ page.name }}</p>
+
+        <div class="content has-text-right">
+          <span><i class="fas fa-envelope-open-text"></i></span>
+          {{ page.email }}</div>
+
+        <div class="column is-12">
+            <p class="title is-4">About me</p>
+            <div class="content has-text-justified">
+
+                {{ content }}
+            </div>
+        </div>
+    </div>
+
+
+
+
+</div>

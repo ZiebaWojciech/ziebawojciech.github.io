@@ -6,9 +6,6 @@
             <p class="title is-3 has-text-centered">
                 <span>{{ tier.tier_name }}</span>
             </p>
-            <p class="subtitle has-text-centered">
-                <span class="icon is-large gh-sponsor"><i class="fas fa-heart fa-2x"></i></span>
-            </p>
             <div class="columns is-centered">
                 <div class="column is-6 content has-text-centered">
                     <p>{{ tier.description | markdownify }}</p>
@@ -23,8 +20,10 @@
                             {{ sponsor.name }}
                         </p>
                         <p class="subtitle is-6">
-                            {% if sponsor.profile %}
-                            <a href="{{ sponsor.profile }}" class="is-link is-small">View Profile</a>
+                            {% if sponsor.image and sponsor.profile %}
+                              <a href="{{ sponsor.profile }}" class="is-link is-small"><img src="{{ sponsor.image }}"> </a>
+                            {% else if sponsor.profile %}
+                              <a href="{{ sponsor.profile }}" class="is-link is-small">View Profile</a>
                             {% else %}
                             &nbsp;
                             {% endif %}

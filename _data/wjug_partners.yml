@@ -1,0 +1,33 @@
+- tier_name: Sponsors
+  size: large
+  description: |-
+      We can award you with free staff thanks to them.
+  sponsors:
+    - name: Stacja IT
+      profile: https://stacja.it/
+      image: /img/stacja_it.jpg
+
+    - name: Jet Brains
+      profile: https://www.jetbrains.com/
+      image: /img/jetbrains.png
+      
+    - name: Decerto
+      profile: https://decerto.com/pl/
+      image: /img/decerto.png
+
+- tier_name: Support
+  description: |-
+    Special thank to oganizations helping us with our day-to-day routine
+
+  sponsors:
+    - name: thecamels
+      profile: https://thecamels.org/pl/
+      image: /img/thecamels.png
+
+    - name: WMIiM UW
+      profile: https://www.mimuw.edu.pl/
+      image: /img/mimuw-logo.png
+
+    - name: SOFTWAREMILL
+      profile: https://softwaremill.com/
+      image: /img/softwaremill.png
