@@ -1,0 +1,51 @@
+style: is-light
+height: is-medium
+items:
+  - title: E-mail
+    icon: fas fa-envelope-open-text
+    description: >
+      Our e-mail is leaders@warszawa.jug.pl
+    call_to_action_name: E-mail us
+    call_to_action_link: mailto:leaders@warszawa.jug.pl
+
+  - title: YouTube
+    icon: fab fa-youtube
+    description: >
+      You can find recordings of our stationary meetups, online LIVE shows and more.
+    call_to_action_name: Our YT channel
+    call_to_action_link: http://www.youtube.com/channel/UC2coGyxf5x_CzJ3l4F-N-Sw
+
+  - title: Meetup
+    icon: fab fa-meetup
+    description: >
+      Become a member of our group and get upcoming events updates.
+    call_to_action_name: WJUG meetup
+    call_to_action_link: https://www.meetup.com/Warszawa-JUG/
+
+  - title: Twitter
+    icon: fab fa-twitter
+    description: >
+      Get updates instantly
+    call_to_action_name: '@warszawajug'
+    call_to_action_link: https://twitter.com/warszawajug
+
+  - title: Facebook
+    icon: fab fa-facebook
+    description: >
+      Follow us on Facebook
+    call_to_action_name: '@warsawjug'
+    call_to_action_link: https://www.facebook.com/warsawjug/
+
+  - title: Slack
+    icon: fab fa-slack
+    description: >
+      Join JVM Poland slack and talk to great people from JVM world
+    call_to_action_name: JVM Poland
+    call_to_action_link: http://bit.ly/jvmpoland
+
+  - title: Github
+    icon: fab fa-github
+    description: >
+      Contribute to our projects such as this website
+    call_to_action_name: WJUG Github
+    call_to_action_link: https://github.com/warszawajug
