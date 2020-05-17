@@ -5,7 +5,7 @@
     </div>
     {% else %}
     <header class="card-header">
-        <a class="card-header-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title}}</a>
+        <a class="card-header-title" href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
     </header>
     {% endif %}
     <div class="card-content">
@@ -20,6 +20,10 @@
         </div>
     </div>
     <footer class="card-footer">
-        <p class="card-footer-item">Published: {{ post.date | date: "%b %-d, %Y" }}</p>
+        {% if post.event_date %}
+          <p class="card-footer-item">We meet on {{ post.event_date | date: "%b %-d, %Y" }}</p>
+        {% else %}
+          <p class="card-footer-item">Publish: {{ post.date | date: "%b %-d, %Y" }}</p>
+        {% endif %}
     </footer>
 </div>
