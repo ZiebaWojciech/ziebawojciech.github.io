@@ -1,12 +1,12 @@
 - name: About us
-  link: /about/
+  link: /about
 - name: Meetups
-  link: /meetups/
+  link: /meetups
 - name: Blog
-  link: /blog/
+  link: /blog
 - name: Partners
-  link: /partners/
+  link: /partners
 - name: Collaboration
-  link: /collaboration/
+  link: /collaboration
 - name: Contact
-  link: /contact/
+  link: /contact
