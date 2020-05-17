@@ -1,0 +1,18 @@
+{% if page.video %}
+{% assign video_otw = site.data.[page.video].[0] %}
+  <p class="title is-4">Video of the week</p>
+  <div class="columns is-multiline">
+    <div class="column is-12">
+      <div class="card">
+        <div class="card-image">
+            <iframe width="100%" height="315" src="{{ video_otw.url }}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card-content">
+          <div class="content">
+            {{ video_otw.title }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endif %}

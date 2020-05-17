@@ -1,9 +1,9 @@
-{% if page.menubar and page.show_sidebar %} 
-    {% assign content_width = 'is-4' %} 
-{% elsif page.menubar or page.show_sidebar %} 
-    {% assign content_width = 'is-8' %} 
-{% else %} 
-    {% assign content_width = 'is-12' %} 
+{% if page.menubar and page.show_sidebar %}
+    {% assign content_width = 'is-4' %}
+{% elsif page.menubar or page.show_sidebar %}
+    {% assign content_width = 'is-8' %}
+{% else %}
+    {% assign content_width = 'is-12' %}
 {% endif %}
 <!DOCTYPE html>
 <html>
@@ -28,9 +28,16 @@
                     {% include sponsors.html %}
                     {{ content }}
                 </div>
-                {% if site.posts and page.show_sidebar %}
+
+                {% if page.show_sidebar %}
                 <div class="column is-4-desktop is-12-tablet">
-                    {% include latest-posts.html %}
+                    {% if page.video %}
+                      {% include video.html %}
+                    {% endif %}
+
+                    {% if site.posts %}
+                      {% include latest-posts.html %}
+                    {% endif %}
                 </div>
                 {% endif %}
             </div>
@@ -43,4 +50,3 @@
     {%- include footer-scripts.html -%}
   </body>
 </html>
-
